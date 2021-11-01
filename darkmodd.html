@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="darkmood.css">
+</head>
+<body id="body">
+    <div class="main" id="main">
+        <div class="nav">
+            <i class="fa-solid fa-gear" id="icon" onclick="change()"></i></div>
+     <div class="img">
+         <img src="image/pay.jpg" alt="">
+        </div>
+        <div class="contant">
+            <h1>kumawat Naresh</h1>
+            <h3 class="white" id="h3">web devloaper</h3>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        
+        </ul>
+    </div>
+</body>
+<!-- <i class="fa-solid fa-gear"></i> -->
+<script>
+    let body = document.getElementById("body");
+    let icon = document.getElementById("icon");
+    let h3 = document.getElementById("h3");
+    let main = document.getElementById("main");
+
+
+     function change(){
+       icon.classList.toggle("fa-moon");
+       h3.classList.toggle("black");
+       main.classList.toggle("main-active");
+         body.classList.toggle("active");
+     }
+
+</script>
+</html>
